@@ -22,7 +22,7 @@ int main() {
 
   anemoTime.counting = false;
   pulse.rise(&onPulseInterrupt);
-  
+  startRPMTimer();
 
   while(true){
     wait(5.0);
