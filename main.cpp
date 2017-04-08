@@ -22,14 +22,14 @@ int main() {
 
   anemoTime.counting = false;
   pulse.rise(&onPulseInterrupt);
-  startRPMTimer();
+  
 
   while(true){
-    // wait(5.0);
-    //  printf("alive\r\n");
-    //  led = 1;
-    //  wait(2.0);
-    //  led = 0;
+    wait(5.0);
+     printf("alive\r\n");
+     led = 1;
+     wait(2.0);
+     led = 0;
     
     if(!anemoTime.counting)
     {
